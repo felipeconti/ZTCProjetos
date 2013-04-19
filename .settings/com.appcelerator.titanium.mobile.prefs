@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+iosLaunchConfigurationAttributes/ATTR_MINIFY=true
+iosLaunchConfigurationAttributes/ATTR_PROJECT_NAME=ZTCProjetos
+iosLaunchConfigurationAttributes/appid=com.ztcsolutions.ZTCProjetos
+iosLaunchConfigurationAttributes/certificate=Felipe Conti
+iosLaunchConfigurationAttributes/distribute_path=/Users/felipe/Desktop
+iosLaunchConfigurationAttributes/keychain=
+iosLaunchConfigurationAttributes/output_format=ipa
+iosLaunchConfigurationAttributes/sdk_version=6.1
+iosLaunchConfigurationAttributes/uuid=F5CA79D9-A132-45C5-BA9A-638D5053E9ED
