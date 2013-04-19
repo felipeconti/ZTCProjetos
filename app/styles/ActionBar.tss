@@ -1,0 +1,16 @@
+"#actionBarView":{
+	height:'48dp',
+	backgroundColor:'#18a9db',
+	top:'0dp'
+}
+
+"#titleLabel":{
+	font:{
+		fontWeight:'bold',
+		fontSize:'18dp'
+	},
+	textAlign:'left',
+	width:Ti.UI.FILL,
+	left:'10dp',
+	color:'#fff'
+}

@@ -1,0 +1,11 @@
+<Alloy>
+	<Window title='Clientes'>
+		<RightNavButton platform="ios">
+			<Button id="refreshButton" onClick="loadCustomers" >
+		</RightNavButton>
+		<Require src="ActionBar" id="actionBar" platform='android'/>
+		<TableView id="customersTableView" onClick="showProjects" dataCollection='customers'>
+			<TableViewRow title="{name}"/>
+		</TableView>
+	</Window>
+</Alloy>

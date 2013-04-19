@@ -1,0 +1,3 @@
+"#refreshButton":{
+	systemButton:Ti.UI.iPhone.SystemButton.REFRESH
+}

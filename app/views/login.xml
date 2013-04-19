@@ -1,0 +1,12 @@
+<Alloy>
+	<Window class="container">
+		<ScrollView id="scroll">
+			<ImageView id="logo"/>
+			<Label>Email:</Label>
+			<TextField id="emailTextField"/>
+			<Label>Password:</Label>
+			<TextField id="passTextField"/>
+			<Button id='acessarButton' onClick="acessar">Acessar</Button>
+		</ScrollView>
+	</Window>
+</Alloy>

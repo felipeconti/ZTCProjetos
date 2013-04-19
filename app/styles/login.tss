@@ -1,0 +1,48 @@
+".container": {
+	backgroundColor: "white",
+	layout: "vertical",
+	exitOnClose: "true",
+	fullscreen: "false"
+}
+
+"Label": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "#000",
+	top: "10dp",
+	left: "15dp"
+}
+
+"TextField": {
+	top: '10dp',
+	left:'15dp',
+	height:'40dp',
+	width: '90%',
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED
+}
+
+"#scroll": {
+	layout: "vertical"
+}
+
+"#logo": {
+	top: '10dp',
+	width: '90%',
+	image: "/logo.png"	
+}
+
+"#emailTextField": {
+	keyboardType: "Ti.UI.KEYBOARD_EMAIL", 
+	value: ""
+}
+
+"#passTextField": {
+	passwordMask: "true",
+	value: ""
+}
+
+"#acessarButton": {
+	top: "10dp", 
+	left: "15dp",
+	width: '90%'
+}

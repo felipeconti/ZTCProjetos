@@ -1,0 +1,13 @@
+<Alloy>
+	<Window id="projectsWindow">
+		<RightNavButton platform="ios">
+			<Button id="refreshButton" onClick="loadProjects" >
+		</RightNavButton>
+		<Require src="ActionBar" id="actionBar" platform='android' />
+		<TableView id="projectsTableView" dataCollection="projects">
+			<TableViewRow>
+				<Label id="projectName" text="{from_user}"/>
+			</TableViewRow>
+		</TableView>
+	</Window>
+</Alloy>
