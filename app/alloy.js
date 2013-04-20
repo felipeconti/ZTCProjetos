@@ -10,3 +10,4 @@
 //
 // Alloy.Globals.someGlobalFunction = function(){};
 Alloy.Collections.customers = new Backbone.Collection();
+Alloy.Collections.projects  = new Backbone.Collection();
