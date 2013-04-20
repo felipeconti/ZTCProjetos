@@ -1,16 +1,19 @@
+var users     = Alloy.Collections.users;
 var customers = Alloy.Collections.customers;
-var projects = Alloy.Collections.projects;
+var projects  = Alloy.Collections.projects;
 
 exports.validUser = function(callBackOk) {
 	var xhr = Ti.Network.createHTTPClient();
 	xhr.onload = function(e) {
+		var data = JSON.parse(this.responseText);	
+		users.reset(data);
 		callBackOk();
 	};
 	xhr.onerror = function(e) {
 		alert('Login inválido!');	
 	};
 	//xhr.timeout = 15000;
-	xhr.open("GET", "http://controlaprojetos.ztc.com.br/customers.json");
+	xhr.open("GET", "http://controlaprojetos.ztc.com.br/users.json");
 	xhr.setRequestHeader('Authorization', Ti.App.Properties.getString('login'));
     xhr.send();
 };

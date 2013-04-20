@@ -9,5 +9,6 @@
 // object. For example:
 //
 // Alloy.Globals.someGlobalFunction = function(){};
+Alloy.Collections.users     = new Backbone.Collection();
 Alloy.Collections.customers = new Backbone.Collection();
 Alloy.Collections.projects  = new Backbone.Collection();
