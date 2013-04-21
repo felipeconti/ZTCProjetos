@@ -123,11 +123,12 @@ function doInit(args) {
 	initted = true;
 
 	options = _.defaults(args, {
-		msgPull: 'Pull down to refresh...',
-		msgRelease: 'Release to refresh...',
-		msgUpdating: 'Updating...',
-		msgUpdated: 'Last Updated: %s %s'
+		msgPull: "Puxa aê...",
+    	msgRelease: "Agora solta...",
+    	msgUpdating: "Atualizando...",
+    	msgUpdated: "Ultima atualização: %s %s"
 	});
+	$.status.text = options.msgPull;
 
 	options.table.setHeaderPullView($.headerPullView);
 	 

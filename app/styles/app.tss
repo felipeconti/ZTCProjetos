@@ -1,0 +1,16 @@
+"TableViewRow": {
+	color:'white'
+}
+
+"Window": {
+	backgroundImage:'/images/wallpaper_big.png',
+	barColor:'#280000'
+}
+
+"TableView": {
+	backgroundColor:'transparent'
+}
+
+"SearchBar": {
+	backgroundColor:'transparent'
+}
