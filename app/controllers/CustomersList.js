@@ -1,6 +1,16 @@
 var customers = Alloy.Collections.customers;
 var cpClient = require('CPClient');
 
+var ptrCtrl = Alloy.createWidget('nl.fokkezb.pullToRefresh', null, {
+    table: $.customersTableView,
+    loader: pullRefreshCallBack
+});
+
+function pullRefreshCallBack(widgetCallback) {
+    loadCustomers();
+    widgetCallback(true);
+}
+
 if (OS_ANDROID) {
 	$.actionBar.setTitle('Clientes');
 }

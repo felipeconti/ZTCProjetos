@@ -5,5 +5,7 @@
 	"env:production": {}, 
 	"os:ios": {}, 
 	"os:android": {}, 
-	"dependencies": {}
+	"dependencies": {
+		"nl.fokkezb.pullToRefresh":"1.1"
+	}
 }

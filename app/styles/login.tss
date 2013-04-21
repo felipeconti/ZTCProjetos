@@ -32,13 +32,13 @@
 }
 
 "#emailTextField": {
-	keyboardType: "Ti.UI.KEYBOARD_EMAIL", 
-	value: "felipeconti18@gmail.com"
+	//value: "felipeconti18@gmail.com",
+	keyboardType: "Ti.UI.KEYBOARD_EMAIL"	
 }
 
 "#passTextField": {
-	passwordMask: "true",
-	value: "12345678"
+	//value: "12345678",
+	passwordMask: "true"	
 }
 
 "#acessarButton": {
