@@ -90,18 +90,20 @@ function scrollListener(e) {
     if (pulled) {
     	return;
     }
-    
+
     if (pulling && !loading && offset > -80 && offset < 0){
         pulling = false;
         var unrotate = Ti.UI.create2DMatrix();
-        $.arrow.animate({transform:unrotate, duration:180});
-        $.status.text = options.msgPull;
-        
-    } else if (!pulling && !loading && offset < -80){
+        $.arrow.animate({transform:unrotate, duration:180, curve:Ti.UI.ANIMATION_CURVE_EASE_IN});
+        $.status.text = options.msgPull;        
+    } else if (!pulling && !loading && offset < -80 && offset > -120){
         pulling = true;
         var rotate = Ti.UI.create2DMatrix().rotate(180);
-        $.arrow.animate({transform:rotate, duration:180});
+        $.arrow.animate({transform:rotate, duration:180, curve:Ti.UI.ANIMATION_CURVE_EASE_IN});
         $.status.text = options.msgRelease;
+    }else if (pulling && !loading && offset < -120){
+    	$.status.text = "Soltaaaaaaaa....";
+    	pulling = false;
     }
 }
 

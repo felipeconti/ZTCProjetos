@@ -10,7 +10,11 @@ exports.validUser = function(callBackOk) {
 		callBackOk();
 	};
 	xhr.onerror = function(e) {
-		alert('Login inválido!');	
+		if (this.status = 401){
+			alert('Login inválido!');
+		}else{
+			alert('Erro de conexção!');
+		}
 	};
 	//xhr.timeout = 15000;
 	xhr.open("GET", "http://controlaprojetos.ztc.com.br/users.json");
