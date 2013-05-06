@@ -101,9 +101,8 @@ function scrollListener(e) {
         var rotate = Ti.UI.create2DMatrix().rotate(180);
         $.arrow.animate({transform:rotate, duration:180, curve:Ti.UI.ANIMATION_CURVE_EASE_IN});
         $.status.text = options.msgRelease;
-    }else if (pulling && !loading && offset < -140){
+    }else if (!loading && offset < -140){
     	$.status.text = "Soltaaaaaaaa....";
-    	pulling = false;
     }
 }
 
