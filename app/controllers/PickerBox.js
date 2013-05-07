@@ -4,7 +4,7 @@ var textField;
 var slide_in  =  Titanium.UI.createAnimation({bottom:0});
 var slide_out =  Titanium.UI.createAnimation({bottom:-251});
 
-Titanium.UI.setBackgroundColor('#000');
+$.picker.selectionIndicator = true;
 
 var cancel =  Titanium.UI.createButton({
 	title:'Cancel',
@@ -21,16 +21,6 @@ var spacer =  Titanium.UI.createButton({
 });
 
 $.toolbar.items = [cancel,spacer,done];
-
-$.picker.selectionIndicator = true;
-
-var picker_data = [
-	Titanium.UI.createPickerRow({title:'felipeconti18@gmail.com'}),
-	Titanium.UI.createPickerRow({title:'wellington.montim@ztcsolutions.com.br'}),
-	Titanium.UI.createPickerRow({title:'raphael.zei@gmail.com'})
-];
-
-$.picker.add(picker_data);
 
 cancel.addEventListener('click',function() {
 	$.Picker_View.animate(slide_out);
@@ -59,5 +49,8 @@ exports.setTextField = function(pTextField) {
 };
 
 exports.setPicker = function(data) {
-	//$.picker.add(data);
+	for(var i=0, ilen=data.length; i<ilen; i++){
+		$.picker_column.addRow(data[i]);
+	}
+    $.picker.reloadColumn($.picker_column);
 };

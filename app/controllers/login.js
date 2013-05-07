@@ -16,7 +16,6 @@ cpClient.getUsers(function(){
 		data.push(Ti.UI.createPickerRow({title: users.at(i).toJSON().email}));
 	}
 	$.pickerBox.setPicker(data);
-	// $.User_List.setSelectedRow(0, 0, false);
 });
 
 function acessar() {
