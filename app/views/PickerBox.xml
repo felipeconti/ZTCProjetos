@@ -1,0 +1,6 @@
+<Alloy>
+	<View id="Picker_View">
+		<Toolbar id="toolbar"></Toolbar>
+		<Picker id="picker"></Picker>
+	</View>
+</Alloy>

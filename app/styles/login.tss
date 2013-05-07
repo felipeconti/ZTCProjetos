@@ -33,12 +33,15 @@
 }
 
 "#emailTextField": {
-	//value: "felipeconti18@gmail.com",
-	keyboardType: "Ti.UI.KEYBOARD_EMAIL"	
+	hintText:"E-mail",
+	value: "",
+	keyboardType: "Ti.UI.KEYBOARD_EMAIL",
+	rightButtonMode: Titanium.UI.INPUT_BUTTONMODE_ALWAYS	
 }
 
 "#passTextField": {
-	//value: "12345678",
+	hintText:"Senha",
+	value: "",
 	passwordMask: "true"	
 }
 

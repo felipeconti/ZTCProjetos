@@ -1,3 +1,24 @@
+var users = Alloy.Collections.users;
+var cpClient = require('CPClient');
+
+var drop_button =  Titanium.UI.createButton({
+	style:Titanium.UI.iPhone.SystemButton.DISCLOSURE,
+	transform:Titanium.UI.create2DMatrix().rotate(90)
+});
+$.emailTextField.rightButton = drop_button;
+
+$.pickerBox.setDropButton(drop_button);
+$.pickerBox.setTextField($.emailTextField);
+
+cpClient.getUsers(function(){
+	var data = [];
+	for(var i=0, ilen=users.length; i<ilen; i++){
+		data.push(Ti.UI.createPickerRow({title: users.at(i).toJSON().email}));
+	}
+	$.pickerBox.setPicker(data);
+	// $.User_List.setSelectedRow(0, 0, false);
+});
+
 function acessar() {
 
 	if ($.emailTextField.value != '' && $.passTextField.value != '') {

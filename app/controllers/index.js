@@ -1,3 +1,5 @@
+$.index.visible = false;
+
 if (OS_ANDROID) {
 	$.customersList.getView().open();	
 } else {
@@ -7,3 +9,5 @@ if (OS_ANDROID) {
 
 var login = Alloy.createController('login');
 login.getView().open();
+
+$.index.visible = true;

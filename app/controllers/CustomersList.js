@@ -27,7 +27,7 @@ function transformCustomers(collection){
 
 function showProjects(e) {
 	
-	var custormer = customers.at(e.index).toJSON()
+	var custormer = customers.at(e.index).toJSON();
 
 	var ProjectController = Alloy.createController('ProjectsList', custormer );
 	var win = ProjectController.getView();

@@ -1,0 +1,13 @@
+"#Picker_View": {
+	backgroundColor: '#000',
+	height: "251",
+	bottom: "-251"
+}
+
+"#toolbar": {
+	top:0
+}
+
+"#picker": {
+	top:43
+}

@@ -28,4 +28,4 @@ function loadProjects() {
 	cpClient.searchProjects(customer.id);
 }
 
-loadProjects();
+projects.reset(customer.projects);
