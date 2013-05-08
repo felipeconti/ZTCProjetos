@@ -7,12 +7,12 @@ var slide_out =  Titanium.UI.createAnimation({bottom:-251});
 $.picker.selectionIndicator = true;
 
 var cancel =  Titanium.UI.createButton({
-	title:'Cancel',
+	title:'Cancelar',
 	style:Titanium.UI.iPhone.SystemButtonStyle.BORDERED
 });
 
 var done =  Titanium.UI.createButton({
-	title:'Done',
+	title:'Selecionar',
 	style:Titanium.UI.iPhone.SystemButtonStyle.DONE
 });
 
