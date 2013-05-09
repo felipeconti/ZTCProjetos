@@ -1,6 +1,6 @@
 <Alloy>
 	<Window class="container">
-		<View>
+		<View id="login_view">
 			<ScrollView id="scroll">
 				<ImageView id="logo"/>
 				<Label>Email:</Label>

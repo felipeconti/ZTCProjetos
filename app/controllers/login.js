@@ -36,3 +36,14 @@ function acessar() {
 		alert('Favor preencher o login!');
 	}		
 }
+
+exports.runAnimation = function() {
+	var matrix = Ti.UI.create2DMatrix()
+	matrix = matrix.rotate(180);
+	matrix = matrix.scale(-2, -2);
+	var a = Ti.UI.createAnimation({
+		transform : matrix,
+		autoreverse : true
+	});
+	$.login_view.animate(a);
+};

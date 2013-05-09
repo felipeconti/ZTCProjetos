@@ -1,8 +1,11 @@
 ".container": {
 	backgroundColor: "white",
-	layout: "vertical",
-	exitOnClose: "true",
-	fullscreen: "false"
+	//layout: "vertical",
+	exitOnClose: "true"
+}
+
+"#login_view": {
+	//opacity: 0
 }
 
 "Label": {
