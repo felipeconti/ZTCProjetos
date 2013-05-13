@@ -9,6 +9,5 @@ if (OS_ANDROID) {
 
 var login = Alloy.createController('login');
 login.getView().open();
-login.runAnimation();
 
 $.index.visible = true;

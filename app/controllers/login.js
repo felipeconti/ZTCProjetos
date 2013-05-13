@@ -10,6 +10,10 @@ $.emailTextField.rightButton = drop_button;
 $.pickerBox.setDropButton(drop_button);
 $.pickerBox.setTextField($.emailTextField);
 
+$.logo.addEventListener('doubletap', function(){
+	$.runAnimation();
+});
+
 cpClient.getUsers(function(){
 	var data = [];
 	for(var i=0, ilen=users.length; i<ilen; i++){
