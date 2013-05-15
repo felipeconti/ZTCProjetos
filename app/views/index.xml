@@ -1,8 +1,8 @@
 <Alloy>
-	<Window platform="ios">
+	<Window platform="ios" id="win_IOS">
 		<NavigationGroup id="navGroup">
 			<Require src="CustomersList"/>
 		</NavigationGroup>
 	</Window>
-	<Require id="customersList" platform="android" src="CustomersList"/>
+	<Require id="win_AND" platform="android" src="CustomersList"/>
 </Alloy>

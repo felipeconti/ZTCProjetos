@@ -1,13 +1,17 @@
-$.index.visible = false;
+if (OS_IOS) {
+	$.win_IOS.visible = false;
+}
 
 if (OS_ANDROID) {
-	$.customersList.getView().open();	
+	$.win_AND.getView().open();	
 } else {
 	Alloy.Globals.navGroup = $.navGroup;
-	$.index.open();
+	$.win_IOS.open();
 }
 
 var login = Alloy.createController('login');
 login.getView().open();
 
-$.index.visible = true;
+if (OS_IOS) {
+	$.win_IOS.visible = true;
+}
